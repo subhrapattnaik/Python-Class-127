@@ -61,6 +61,8 @@ open the link we want to scrape with Chrome browser using Selenium -
 Before we do that, let’s inspect the page. We can see that all the rows in the table are ​ul​ tags with ​class​ as exoplanet​
 
 
+Therefore, we need to find all the ul tags with class exoplanet in order to scrape the data.
+
 
 ---------------------------------
 chromedriver:
