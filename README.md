@@ -82,6 +82,20 @@ planet_data list that we created earlier
 Let’s inspect the li tags a bit deeper.
 Here, we can see that the li tags have the name of the planet inside an anchor tag, and other details directly as HTML. For this, we need to make
 sure that we treat the first li tag differently and others differently.
+
+
+Let’s break it down line by line. We are first creating a temp_list to store all the data of this row.
+Then, we are iterating over the li_tags we fetched earlier but this time, in a different way
+
+
+Enumerate will give us both the index and the element on that index, instead of just the index that a traditional loop gives.
+Using this index, if the index is 0 (first element), we are first finding the anchor tag inside the li_tag, and then
+copying the inner HTML of it.Else, we want to directly copy the inner HTML of the li_tag.To facilitate this, in case a column is
+empty and we get an error, we are going to use the try except block.Lastly, we will append this temp_listinto the planet_data.
+
+
+Now, one final thing that we need to still figure out is, how to change the page by clicking on the next button.
+Let’s check on the browser first -
 ---------------------------------
 chromedriver:
 
