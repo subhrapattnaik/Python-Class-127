@@ -96,7 +96,26 @@ empty and we get an error, we are going to use the try except block.Lastly, we w
 
 Now, one final thing that we need to still figure out is, how to change the page by clicking on the next button.
 Let’s check on the browser first -
+
+There, we have a button at the bottom of the page.We want to go to the next page after our code is done with all the ul_tags
+of the current page. We can go to the next page with the following code:
+
+Here, we are finding an element with xpath, and then clicking it.
+
+XPath can be used to navigate through elements and attributes in an XML document. XPath is a syntax for defining parts of an XML document.
+
+We just need to find the element in google inspect, right click on it and the click on copy xpath.
+Now, we have successfully scraped the first page and we have also seen how we can go to the next page.We need to scrape 428 pages in total.
+
+***********************************
+code to implement the loop 428 times and then create a csv of all the data fetched.
 ---------------------------------
+
+ We just scraped our first web-page! Now, let’s randomly pick a few planets from the last of the csv and check if they match with the
+planets mentioned in the last page of the website
+
+
+****************************
 chromedriver:
 
 It’s a driver that will help us open chrome browser with Selenium. For that, we will have to download it from the following link -
