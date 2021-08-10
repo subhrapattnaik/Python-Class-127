@@ -67,7 +67,21 @@ Earlier, the chrome window we opened with Selenium, we named it as browser. Now,
 passing the browser’s page source and asking our bs4 to use html.parser in it, which means it will read the page as an HTML.
 
 
+Next, we are creating a for loop to iterate over all the ul_tags inside soup.find_all(“ul”, attrs={“class”:“exoplanet”}), meaning that it will final
+all the ul_tags with class exoplanet.
 
+----------------
+Next, let’s again check the HTML with google inspect to see what’s inside the ul tag.
+
+Here, we can see that it consists of li tags inside which we can get data. Again, we will need to iterate over all the li tags. For this, we will find all the
+li tags.
+
+now all we have to do is to iterate over these li tags and fetch the data, create a temporary list and then finally append that list into the
+planet_data list that we created earlier
+--------
+Let’s inspect the li tags a bit deeper.
+Here, we can see that the li tags have the name of the planet inside an anchor tag, and other details directly as HTML. For this, we need to make
+sure that we treat the first li tag differently and others differently.
 ---------------------------------
 chromedriver:
 
