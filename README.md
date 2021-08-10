@@ -57,7 +57,11 @@ open the link we want to scrape with Chrome browser using Selenium -
  Inside the headers, I have the name of the columns I can see on the table mentioned in the web-page we are scraping, and the planet_data would be to save all the details of the planet. We will create a csv from these lists.
  
  
- 
+ let’s just try to scrape the first page only.
+Before we do that, let’s inspect the page. We can see that all the rows in the table are ​ul​ tags with ​class​ as exoplanet​
+
+
+
 ---------------------------------
 chromedriver:
 
