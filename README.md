@@ -21,12 +21,21 @@ https://exoplanets.nasa.gov/discovery/exoplanet-catalog/
 we will scrape this website’s data. In this website, there is data present for about 4,277 exo-planets in 428 pages. 
 ---------------------------------------------------------
 Let’s start by creating a virtual environment in a new directory -
+
+
 python3.8 -m venv venv
+
 venv\Scripts\activate.bat
+
+
 or
 ---------------------------------
 the below i did in my system
+
+
 python -m venv venv
+
+
 venv\Scripts\activate.bat
 
 
