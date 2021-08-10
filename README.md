@@ -42,6 +42,23 @@ Since we have to scrape data from 428 pages, clicking on the button to go to the
 Selenium opens up the webpage in a browser.
 
 -----------------------------------------------------------
+
+Create a new file in your directory where you created the virtual environment, and name it as scraper.py.
+
+Code:
+import the libraries
+make our code sleep for some time, so that the web-page could load properly before we start scraping. We are importing csv so that we can export the data that we scrape into CSV.
+
+open the link we want to scrape with Chrome browser using Selenium -
+
+ START_URL​ ​= "https://exoplanets.nasa.gov/exoplane t-catalog/"
+ 
+ 
+ Inside the headers, I have the name of the columns I can see on the table mentioned in the web-page we are scraping, and the planet_data would be to save all the details of the planet. We will create a csv from these lists.
+ 
+ 
+ 
+---------------------------------
 chromedriver:
 
 It’s a driver that will help us open chrome browser with Selenium. For that, we will have to download it from the following link -
