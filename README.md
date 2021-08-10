@@ -13,15 +13,23 @@ Therefore in today’s class, we will learn about Web-Scraping, where we will wr
 
 Teacher opens the link from Teacher activity 1
 
-https://exoplanets.nasa.gov/exoplanet -catalog/
+
+
+https://exoplanets.nasa.gov/discovery/exoplanet-catalog/
 
 
 we will scrape this website’s data. In this website, there is data present for about 4,277 exo-planets in 428 pages. 
 ---------------------------------------------------------
 Let’s start by creating a virtual environment in a new directory -
 python3.8 -m venv venv
-
 venv\Scripts\activate.bat
+or
+---------------------------------
+the below i did in my system
+python -m venv venv
+venv\Scripts\activate.bat
+
+
 
 ---------------------
 for mac:
@@ -51,7 +59,7 @@ make our code sleep for some time, so that the web-page could load properly befo
 
 open the link we want to scrape with Chrome browser using Selenium -
 
- START_URL​ ​= "https://exoplanets.nasa.gov/exoplane t-catalog/"
+ START_URL​ ​= "https://exoplanets.nasa.gov/discovery/exoplanet-catalog/"
  
  
  Inside the headers, I have the name of the columns I can see on the table mentioned in the web-page we are scraping, and the planet_data would be to save all the details of the planet. We will create a csv from these lists.
