@@ -63,6 +63,10 @@ Before we do that, let’s inspect the page. We can see that all the rows in the
 
 Therefore, we need to find all the ul tags with class exoplanet in order to scrape the data.
 
+Earlier, the chrome window we opened with Selenium, we named it as browser. Now, we are creating a BeautifulSoup object where we are
+passing the browser’s page source and asking our bs4 to use html.parser in it, which means it will read the page as an HTML.
+
+
 
 ---------------------------------
 chromedriver:
